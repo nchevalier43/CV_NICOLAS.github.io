@@ -1,0 +1,222 @@
+﻿<html>
+<head>
+    <meta charset="utf-8">
+    <title> Nicolas Chevalier</title>
+    <style>
+        /* Définition des couleurs */
+        :root {
+            --primary-color: #0099ff;
+            --secondary-color: #ffffff;
+            --tertiary-color: #f0f0f0;
+            --quaternary-color: #333333;
+            --quinary-color: #666666;
+        }
+
+        /* Définition des styles généraux */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            background-color: var(--tertiary-color);
+        }
+
+        h1, h2, h3 {
+            color: var(--quaternary-color);
+        }
+
+        p, li {
+            color: var(--quinary-color);
+        }
+
+        a {
+            color: var(--primary-color);
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        /* Définition du style du conteneur principal */
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: var(--secondary-color);
+            border: 1px solid var(--primary-color);
+        }
+
+        /* Définition du style de la section des informations personnelles */
+        .personal-info {
+            display: flex;
+            align-items: center;
+        }
+
+            .personal-info img {
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                margin-right: 20px;
+            }
+
+            .personal-info ul {
+                list-style-type: none;
+            }
+
+        /* Définition du style des sections du contenu */
+        .content {
+            margin-top: 20px;
+        }
+
+            .content h2 {
+                margin-bottom: 10px;
+                border-bottom: 1px solid var(--primary-color);
+                padding-bottom: 10px;
+            }
+
+            .content ul {
+                list-style-type: none;
+            }
+
+            .content li {
+                margin-bottom: 10px;
+            }
+
+        /* Définition du style des sous-sections du contenu */
+        .sub-content {
+            display: flex;
+            justify-content: space-between;
+        }
+
+            .sub-content h3 {
+                margin-right: 10px;
+            }
+
+            .sub-content p {
+                font-weight: bold;
+                color: var(--primary-color);
+            }
+
+        /* Définition du style des médias queries pour les écrans de petite taille */
+        @media screen and (max-width: 600px) {
+            .personal-info {
+                flex-direction: column;
+                text-align: center;
+            }
+
+                .personal-info img {
+                    margin-right: 0;
+                    margin-bottom: 10px;
+                }
+
+            .sub-content {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="personal-info">
+            <ul>
+                <li><h1>Nicolas Chevalier</h1></li>
+                <li><p>Technicien assistance informatique en BTS SIO</p></li>
+                <li><p>15 rue de toto, 42000 Saint-Étienne</p></li>
+                <li><p>07 89 45 67 23</p></li>
+                <li><p><a href="mailto:nico.chevalier@email.com">nico.chevalier@email.com</a></p></li>
+                <li><p>Permis B</p></li>
+                <li><p>Langues : Français bilingue, Anglais niveau A2</p></li>
+                <li><p>Hobbies : Le cinéma, le sport, les mangas, la musique, l'informatique</p></li>
+
+            </ul>
+        </div>
+        <div class="content">
+            <h2>Formation</h2>
+            <ul>
+                <li>
+                    <div class="sub-content">
+                        <h3>Formation découverte des métiers du numérique</h3>
+                        <p>2021 - 2021</p>
+                    </div>
+                    <p>Greta du Velay</p>
+                </li>
+                <li>
+                    <div class="sub-content">
+                        <h3>Titre Professionnel technicien assistance informatique</h3>
+                        <p>2022 - 2023</p>
+                    </div>
+                    <p>ONLINEFORMAPRO</p>
+                </li>
+            </ul>
+            <h2>Compétences</h2>
+            <ul>
+                <li><h3>Système</h3></li>
+                <li>Virtualisation</li>
+                <li>Active Directory</li>
+                <li><h3>Réseau</h3></li>
+                <li>Brassage de baie informatique</li>
+                <li>Administration de routeur et switch</li>
+            </ul>
+            <h2>Expérience professionnelle</h2>
+            <ul>
+                <li>
+                    <div class="sub-content">
+                        <h3>Stage en cybersécurité chez OXIALIS</h3>
+                        <p>Janvier 2023 - Janvier 2023</p>
+                    </div>
+                    <ul>
+                        <li>Analyse de risques</li>
+                        <li>Audit de sécurité</li>
+                        <li>Mise en place de solutions de protection</li>
+                    </ul>
+                </li>
+                <li>
+                    <div class="sub-content">
+                        <h3>Stage puis CDD de 3 mois chez SILEANE en tant que technicien informatique</h3>
+                        <p>février 2023 - Juin 2023</p>
+                    </div>
+                    <ul>
+                        <li>Installation et maintenance du parc informatique</li>
+                        <li>Support aux utilisateurs</li>
+                        <li>Gestion du réseau</li>
+                    </ul>
+
+                </li>
+
+                <li>
+
+                    <div class="sub-content">
+                        <h3>Contrat en alternance chez FAURE trucks en cours</h3>
+
+                        <p>Septembre - Aujourd'hui</p>
+
+                    </div>
+
+                    <ul>
+
+                        <li>Maintenance système et réseau</li>
+
+                        <li>Support aux utilisateurs</li>
+
+                        <li>Veille technologique</li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+
